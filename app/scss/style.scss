@@ -34,8 +34,12 @@
         display: flex;
     }
 
-    &__item+.menu__item {
-        margin-left: 45px;
+    &__item {
+        margin-right: 45px;
+    }
+
+    &__item:last-child {
+        margin-right: 0;
     }
 
     &__item-link {
@@ -50,12 +54,16 @@
 .user-nav {
     display: flex;
 
-    &__link+.user-nav__link {
-        margin-left: 75px;
+    &__link {
+        margin-right: 75px;
     }
 
-    &__link:nth-child(2) {
-        margin-left: 30px;
+    &__link:last-child {
+        margin-right: 0;
+    }
+
+    &__link:nth-child(1) {
+        margin-right: 30px;
     }
 
     &__link {
@@ -67,9 +75,9 @@
     }
 
     &___wishlist {
-        margin: 0px 25px;
+        margin: 0 30px 0 0;
         display: flex;
-        background-color: #fcd7b6;
+        background-color: $accent;
         border-radius: 56px;
         padding: 15px 30px;
     }
@@ -87,7 +95,7 @@
     }
 
     &__link--btn {
-        background-color: #a3bbc8;
+        background-color: $bg-btn;
         border-radius: 50%;
         width: 50px;
         height: 50px;
@@ -103,11 +111,119 @@
         font-size: 10px;
         color: black;
         text-align: center;
-        line-height: 15px;
+        line-height: 1.5;
         background-color: #fff;
         border-radius: 50%;
     }
 }
+
+.footer-top {
+    padding: 70px 0;
+    border-bottom: 1px solid $defalut;
+    display: flex;
+
+    &__logo {
+        position: relative;
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    &__logo::before {
+        content: 'Glee.';
+        @extend %rubik-500;
+        color: $text;
+        font-size: 36px;
+        line-height: 58px;
+        cursor: pointer;
+        position: absolute;
+        left: 65px;
+        top: -9px;
+    }
+
+    &__contact {
+        max-width: 206px;
+        text-decoration: none;
+        margin-right: 100px;
+    }
+
+    &__adress,
+    &__phone,
+    &__email,
+    &__link {
+        text-decoration: none;
+        color: $defalut;
+        line-height: 1.7;
+        margin-bottom: 20px;
+    }
+
+    &__service,
+    &__account {
+        max-width: 120px;
+        width: 100%;
+        margin-right: 205px;
+    }
+
+    &__title {
+        display: block;
+        color: #1f2044;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin: 25px 0;
+        @extend %dmsans-700;
+    }
+
+    &__item-form {
+        max-width: 270px;
+    }
+
+    &__text {
+        margin-bottom: 35px;
+    }
+
+    &__input {
+        border: none;
+        background-color: $bg;
+        max-width: 170px;
+        width: 100%;
+        padding: 15px 15px;
+        margin-right: -4px;
+        &::placeholder {
+            color: #234969;
+        }
+    }
+    &__btn{
+        border: none;
+        background-color: $bg-btn;
+        color: #fff;
+        padding: 15px 15px;
+        cursor: pointer;
+    }
+}
+
+.footer-bottom{
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__nav{
+        display: flex;
+    }
+    &__nav-link{
+        text-decoration: none;
+        color: $defalut;
+        margin-right: 25px;
+        padding-right: 15px;
+        border-right: 1px solid $defalut;
+        &:last-child{
+            padding-right: 0;
+            margin-right: 0;
+            border-right: none;
+        }
+    }
+}
+
+
+
 
 
 
