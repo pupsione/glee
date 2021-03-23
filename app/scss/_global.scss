@@ -1,4 +1,11 @@
+html,
 body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
     @extend %rubik-400;
     color: $defalut;
     font-size: 14px;
@@ -6,7 +13,17 @@ body{
 }
 
 .container{
-    max-width: 1770px;
+    max-width: 1200px;
     padding: 0 10px;
     margin: 0 auto;
+}
+
+.main{
+    flex-grow: 1;
+}
+
+a{
+    text-decoration: none;
+    color: $defalut;
+    cursor: pointer;
 }
