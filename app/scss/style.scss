@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'global';
 @import 'reset';
+@import 'libs';
 @import 'fonts';
 
 
@@ -182,11 +183,13 @@
         width: 100%;
         padding: 15px 15px;
         margin-right: -4px;
+
         &::placeholder {
             color: #234969;
         }
     }
-    &__btn{
+
+    &__btn {
         border: none;
         background-color: $bg-btn;
         color: #fff;
@@ -195,19 +198,22 @@
     }
 }
 
-.footer-bottom{
+.footer-bottom {
     padding: 35px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    &__nav{
+
+    &__nav {
         display: flex;
     }
-    &__nav-link{
+
+    &__nav-link {
         margin-right: 25px;
         padding-right: 15px;
         border-right: 1px solid $defalut;
-        &:last-child{
+
+        &:last-child {
             padding-right: 0;
             margin-right: 0;
             border-right: none;
@@ -215,6 +221,95 @@
     }
 }
 
+.slider-top {
+    padding-top: 50px;
+
+    &__inner {
+        background-color: $accent;
+    }
+
+    &__item {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        background-position-x: 95%;
+        background-position-y: 95%;
+        background-repeat: no-repeat;
+    }
+
+    &__content {
+        max-width: 420px;
+        margin-right: 100px;
+        color: #436372;
+        padding-top: 200px;
+        margin-bottom: 215px;
+    }
+
+    &__title {
+        @extend %rubik-500;
+        font-size: 72px;
+        line-height: 70px;
+        margin-bottom: 25px;
+        color: #243f4d;
+    }
+
+    &__discr {
+        display: block;
+        margin-bottom: 35px;
+        max-width: 300px;
+    }
+
+    &__link {
+        display: inline-block;
+        background-color: $bg-btn;
+        padding: 20px 97px 20px 20px;
+        color: #fff;
+        position: relative;
+
+        &::before {
+            content: '';
+            background-image: url('../images/slider/slider-btn.svg');
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 25px;
+            height: 12px;
+            top: 50%;
+            transform: translateY(-30%);
+            right: 10%;
+        }
+    }
+
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding-bottom: 35px;
+
+        li {
+            line-height: 1;
+            margin-right: 12px;
+
+            button {
+                padding: 0;
+                font-size: 10px;
+                line-height: 11px;
+                color: #7a878d;
+                width: 25px;
+                height: 25px;
+                border-color: transparent;
+                border-radius: 50%;
+                background-color: #fde3cc;
+            }
+        }
+
+        .slick-active {
+            button {
+                color: #243f4d;
+                background-color: #fff;
+            }
+        }
+    }
+}
 
 
 
