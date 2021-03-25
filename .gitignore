@@ -1,11 +1,11 @@
-.Ds_Store
+.DS_Store
 .idea/
 .idea/*
-.vsode
-*siblime*
+.vscode
+*.sublime*
 npm-debug.*
 
 dist/
 node_modules/
 package-lock.json
-app/css/*
+app/scss

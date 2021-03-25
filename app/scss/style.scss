@@ -96,7 +96,8 @@
         border-radius: 50%;
         width: 50px;
         height: 50px;
-
+        border: none;
+        cursor: pointer;
     }
 
     &__num {
@@ -151,9 +152,8 @@
 
     &__service,
     &__account {
-        max-width: 120px;
-        width: 100%;
-        margin-right: 205px;
+        min-width: 120px;
+        margin-right: 195px;
     }
 
     &__title {
@@ -171,6 +171,7 @@
     }
 
     &__text {
+        display: block;
         margin-bottom: 35px;
     }
 
