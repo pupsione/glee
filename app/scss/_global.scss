@@ -12,6 +12,12 @@ body{
     line-height: 1.3;
 }
 
+a{
+    text-decoration: none;
+    color: $defalut;
+    cursor: pointer;
+}
+
 .container{
     max-width: 1220px;
     padding: 0 10px;
@@ -26,8 +32,11 @@ body{
     flex-grow: 1;
 }
 
-a{
-    text-decoration: none;
-    color: $defalut;
-    cursor: pointer;
+.title{
+    @extend %dmsans-700;
+    font-size: 36px;
+    color: $title;
+    margin-bottom: 40px;
+    text-align: center;
 }
+
