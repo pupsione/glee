@@ -1,9 +1,9 @@
 html,
-body{
+body {
     height: 100%;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     @extend %rubik-400;
@@ -12,27 +12,27 @@ body{
     line-height: 1.3;
 }
 
-a{
+a {
     text-decoration: none;
     color: $defalut;
     cursor: pointer;
 }
 
-.container{
+.container {
     max-width: 1221px;
     padding: 0 10px;
     margin: 0 auto;
 }
 
-.container-bg{
+.container-bg {
     max-width: 1620px;
 }
 
-.main{
+.main {
     flex-grow: 1;
 }
 
-.title{
+.title {
     @extend %dmsans-700;
     font-size: 36px;
     color: $title;
@@ -40,10 +40,77 @@ a{
     text-align: center;
 }
 
+.title-page {
+    @extend %dmsans-700;
+    font-size: 36px;
+    color: $info;
+    margin-bottom: 40px;
+}
+
+.page-text {
+    color: $info;
+    line-height: 1.8;
+}
+
 @function max($numbers...) {
     @return m#{a}x(#{numbers});
-  }
-  @function min($numbers...) {
+}
+
+@function min($numbers...) {
     @return m#{i}n(#{numbers});
-  }
-  
+}
+
+.breadcrums {
+    display: inline-flex;
+    justify-content: center;
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        margin-right: 15px;
+        position: relative;
+
+        &::after {
+            content: '/';
+            position: absolute;
+            color: #979ba0;
+            top: 0;
+            right: -11px;
+        }
+
+        &:last-child {
+            margin-right: 0;
+
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    &__link {
+        color: #979ba0;
+    }
+}
+
+.page-link {
+    display: inline-block;
+    background-color: $bg-btn;
+    padding: 20px 75px 20px 20px;
+    color: #fff;
+    position: relative;
+    border-radius: 5px;
+
+    &::before {
+        content: '';
+        background-image: url('../images/slider/slider-btn.svg');
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 25px;
+        height: 12px;
+        top: 50%;
+        transform: translateY(-30%);
+        right: 14%;
+    }
+}

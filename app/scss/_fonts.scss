@@ -1,5 +1,5 @@
 @font-face{
-    font-family: 'DMSans-bold', sans-serif;
+    font-family: 'DMSans-bold';
     font-weight: 700;
     font-style: normal;
     src: local('DMSans-bold'),
@@ -9,7 +9,7 @@
 }
 
 @font-face{
-    font-family: 'DMSans-Medium', sans-serif;
+    font-family: 'DMSans-Medium';
     font-weight: 500;
     font-style: normal;
     src: local('DMSans-Medium'),
@@ -17,9 +17,17 @@
         url('../fonts/DMSans-Medium.woff') format('woff');
     font-display: swap;
 }
-
 @font-face{
-    font-family: 'Rubik-Regular', sans-serif;
+    font-family: 'Rubik-Light';
+    font-weight: 300;
+    font-style: normal;
+    src: local('Rubik-Light'),
+        url('../fonts/Rubik-Light.woff2') format('woff2'),
+        url('../fonts/Rubik-Light.woff') format('woff');
+    font-display: swap;
+}
+@font-face{
+    font-family: 'Rubik-Regular';
     font-weight: 400;
     font-style: normal;
     src: local('Rubik-Regular'),
@@ -29,11 +37,21 @@
 }
 
 @font-face{
-    font-family: 'Rubik-Medium', sans-serif;
+    font-family: 'Rubik-Medium';
     font-weight: 500;
     font-style: normal;
     src: local('Rubik-Medium'),
         url('../fonts/Rubik-Medium.woff2') format('woff2'),
         url('../fonts/Rubik-Medium.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face{
+    font-family: 'Rubik-Bold';
+    font-weight: 700;
+    font-style: normal;
+    src: local('Rubik-Bold'),
+        url('../fonts/Rubik-Bold.woff2') format('woff2'),
+        url('../fonts/Rubik-Bold.woff') format('woff');
     font-display: swap;
 }

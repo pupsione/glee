@@ -8,23 +8,32 @@ $bg: #fef7f0;
 $bg-btn: #a3bbc8;
 
 
-%dmsans-700{
+%dmsans-700 {
     font-family: 'DMSans-bold', sans-serif;
     font-weight: 700;
 }
 
-%dmsans-500{
+%dmsans-500 {
     font-family: 'DMSans-Medium', sans-serif;
     font-weight: 500;
 }
 
-%rubik-400{
+%rubik-300 {
+    font-family: 'Rubik-Light';
+    font-weight: 300;
+}
+
+%rubik-400 {
     font-family: 'Rubik-Regular', sans-serif;
     font-weight: 400;
 }
 
-%rubik-500{
+%rubik-500 {
     font-family: 'Rubik-Medium', sans-serif;
     font-weight: 500;
 }
 
+%rubik-700 {
+    font-family: 'Rubik-Bold', sans-serif;
+    font-weight: 700;
+}
